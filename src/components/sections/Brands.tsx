@@ -13,7 +13,7 @@ export const Brands = () => {
             <div className='flex justify-center items-center flex-wrap gap-4'>
                 {logos.map((logo, index) => (
                     <div key={index} className='p-4 sm:p-5 rounded-xl bg-body border border-box-border border-transparent group'>
-                        <img src={`/assets/logos/${logo}.png`} alt={logo} width="100" height="60" className='h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105' />
+                        <img src={`${import.meta.env.BASE_URL}/assets/logos/${logo}.png`} alt={logo} width="100" height="60" className='h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105' />
                     </div>
                 ))}
             </div>
